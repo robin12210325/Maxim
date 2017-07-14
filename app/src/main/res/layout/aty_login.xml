@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:titleTextAppearance="@style/ToolBarTitle" />
+
+    <lemon.pear.maxim.widget.IconTextView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/font_login"
+        android:textColor="@color/white"
+        android:textSize="64sp" />
+
+    <RelativeLayout
+        android:id="@+id/layPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/et_trans_round_shape"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/font_tip"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etPhone"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:text="@string/font_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laySecret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/etSecret"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/et_trans_round_shape"
+            android:hint="@string/secret"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/font_tip"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etSecret"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:text="@string/font_secret"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:id="@+id/itSecret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/etSecret"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/space_large"
+            android:text="@string/font_show"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/space_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/space_tiny"
+        android:paddingStart="@dimen/space_tiny">
+
+        <LinearLayout
+            android:id="@+id/layRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <lemon.pear.maxim.widget.IconTextView
+                android:id="@+id/itRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_checked"
+                android:textColor="@color/font_white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_tiny"
+                android:text="@string/login_remember"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/login_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et_trans_round_selector"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_other"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/space_large"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layQQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/lay_trans_round_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_large">
+
+            <lemon.pear.maxim.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_qq"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layWechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/lay_trans_round_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_large">
+
+            <lemon.pear.maxim.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_wechat"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layWeibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/lay_trans_round_selector"
+            android:gravity="center"
+            android:padding="@dimen/space_large">
+
+            <lemon.pear.maxim.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/font_weibo"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

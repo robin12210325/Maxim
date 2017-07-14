@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app -->
+    <color name="colorAccent">#F17C67</color>
+    <color name="tab_text_select">#FFFFFF</color>
+    <color name="tab_text_normal">#EBEBEB</color>
+    <color name="font_white">#F2F2F2</color>
+    <color name="font_light">#EFEFEF</color>
+    <color name="font_tip">#E8E8E8</color>
+    <!-- common -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_20">#20000000</color>
+    <color name="transparent_40">#40000000</color>
+    <color name="trans_line">#15000000</color>
+    <color name="line">#E9E9E9</color>
+    <color name="white">#FFFFFF</color>
+</resources>

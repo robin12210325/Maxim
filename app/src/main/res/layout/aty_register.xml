@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00000000"
+        app:titleTextAppearance="@style/ToolBarTitle" />
+
+    <lemon.pear.maxim.widget.IconTextView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/font_login"
+        android:textColor="@color/white"
+        android:textSize="64sp" />
+
+    <RelativeLayout
+        android:id="@+id/layPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/et_trans_round_shape"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/font_tip"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etPhone"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:text="@string/font_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+
+        <TextView
+            android:id="@+id/tvValidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/etPhone"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/space_large"
+            android:text="@string/validate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layValidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/etValidate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/et_trans_round_shape"
+            android:hint="@string/validate"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/font_tip"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etValidate"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:text="@string/font_validate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laySecret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/etSecret"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/et_trans_round_shape"
+            android:hint="@string/secret"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/font_tip"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etSecret"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:text="@string/font_secret"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et_trans_round_selector"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large" />
+
+</LinearLayout>

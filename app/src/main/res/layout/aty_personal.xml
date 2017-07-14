@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:titleTextAppearance="@style/ToolBarTitle" />
+
+    <lemon.pear.maxim.widget.CircleImageView
+        android:id="@+id/ivUserPhoto"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/space_normal"
+        android:src="@drawable/icon_user" />
+
+    <RelativeLayout
+        android:id="@+id/layUserName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/space_large"
+        android:background="@drawable/lay_trans_click_selector">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:paddingStart="@dimen/space_small"
+            android:text="@string/user_name"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_toEndOf="@id/tvUserName"
+            android:background="@color/transparent"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layUserSex"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/lay_trans_click_selector">
+
+        <TextView
+            android:id="@+id/tvUserSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:paddingStart="@dimen/space_small"
+            android:text="@string/user_sex"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:id="@+id/txtUserSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_toEndOf="@id/tvUserSex"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/lay_trans_click_selector">
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_large"
+            android:paddingStart="@dimen/space_small"
+            android:text="@string/user_email"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/etUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_toEndOf="@id/tvUserEmail"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_trans_round_selector"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_trans_round_selector"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large" />
+
+</LinearLayout>

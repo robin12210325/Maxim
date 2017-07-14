@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/laySearch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="@dimen/space_normal"
+            android:paddingStart="@dimen/space_normal"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_tiny"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:layout_toStartOf="@id/tvCancel"
+            android:background="@drawable/et_white_round_shape"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:paddingStart="40dp"
+            android:textColor="@color/font_tip"
+            android:textColorHint="#C8C8C8"
+            android:textSize="@dimen/font_normal" />
+
+        <lemon.pear.maxim.widget.IconTextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignStart="@id/etSearch"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="@string/font_search"
+            android:textColor="@color/font_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/laySearch" />
+</RelativeLayout>

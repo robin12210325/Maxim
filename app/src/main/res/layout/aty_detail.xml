@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:titleTextAppearance="@style/ToolBarTitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layComment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_normal"
+            android:layout_marginEnd="@dimen/space_normal"
+            android:layout_marginStart="@dimen/space_normal">
+
+            <lemon.pear.maxim.widget.IconTextView
+                android:id="@+id/tvComment"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/lay_trans_btn_selector"
+                android:gravity="left|center_vertical"
+                android:text="@string/font_comment"
+                android:textColor="@color/font_light"
+                android:textSize="32sp" />
+
+            <lemon.pear.maxim.widget.IconTextView
+                android:id="@+id/tvSend"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/lay_trans_btn_selector"
+                android:gravity="right|center_vertical"
+                android:text="@string/font_send"
+                android:textColor="@color/font_light"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toEndOf="@id/tvComment"
+                android:layout_toStartOf="@id/tvSend"
+                android:background="@drawable/et_trans_square_shape"
+                android:hint="@string/data_comment"
+                android:inputType="text"
+                android:maxLength="120"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingStart="@dimen/space_small"
+                android:textColor="@color/white"
+                android:textColorHint="@color/font_tip"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/svDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layComment"
+            android:layout_marginBottom="@dimen/space_normal"
+            android:layout_marginEnd="@dimen/space_normal"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@drawable/lay_trans_round_shape"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMaxim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/space_small"
+                    android:padding="@dimen/space_small"
+                    android:textColor="@color/font_light"
+                    android:textSize="@dimen/font_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="@dimen/space_small"
+                    android:background="@color/trans_line" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_tiny">12sp</dimen>
+
+    <dimen name="font_icon">18sp</dimen>
+
+    <dimen name="radius_small">5dp</dimen>
+    <dimen name="radius_normal">10dp</dimen>
+    <dimen name="radius_circle">50dp</dimen>
+
+    <dimen name="space_tiny">5dp</dimen>
+    <dimen name="space_small">10dp</dimen>
+    <dimen name="space_normal">15dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+</resources>

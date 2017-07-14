@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme" parent="CustomTheme">
+        <item name="android:windowBackground">@drawable/wall_default</item>
+    </style>
+
+    <style name="AppFirst" parent="CustomTheme">
+        <item name="android:windowBackground">@drawable/wall_first</item>
+    </style>
+
+    <style name="AppSecond" parent="CustomTheme">
+        <item name="android:windowBackground">@drawable/wall_second</item>
+    </style>
+
+    <style name="AppThird" parent="CustomTheme">
+        <item name="android:windowBackground">@drawable/wall_third</item>
+    </style>
+
+    <style name="AppFour" parent="CustomTheme">
+        <item name="android:windowBackground">@drawable/wall_four</item>
+    </style>
+
+    <style name="TabLayoutText" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/tab_text_normal</item>
+    </style>
+
+    <style name="ToolBarTitle">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
